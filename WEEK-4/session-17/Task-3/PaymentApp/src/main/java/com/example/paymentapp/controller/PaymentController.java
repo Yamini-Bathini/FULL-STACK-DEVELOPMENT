@@ -1,6 +1,5 @@
 package com.example.paymentapp.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,11 +8,8 @@ import com.example.paymentapp.service.PaymentService;
 
 @RestController
 public class PaymentController {
-
     private final PaymentService paymentService;
-
-    // CONSTRUCTOR INJECTION
-    @Autowired
+    
     public PaymentController(PaymentService paymentService) {
         this.paymentService = paymentService;
     }
