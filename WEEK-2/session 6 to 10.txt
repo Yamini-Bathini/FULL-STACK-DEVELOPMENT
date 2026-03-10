@@ -590,6 +590,3 @@ MariaDB [SCHOOL]> SELECT department,
 +------------+------------------------------------------------+
 3 rows in set (0.001 sec)
 
-MariaDB [SCHOOL]> SELECT net_salary(50000);
-ERROR 1305 (42000): FUNCTION school.net_salary does not exist
-MariaDB [SCHOOL]>
